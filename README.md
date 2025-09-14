@@ -54,12 +54,22 @@ python app.py
 Then open http://localhost:5000
  in your browser.
 
+<<<<<<< HEAD
 🤝 Contributing
 
 Contributions are welcome!
 
 Fork this repo
 
+=======
+
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork this repo
+
+>>>>>>> 5819a14 (Updated README.md with project details)
 Create a feature branch (git checkout -b feature-name)
 
 Commit changes (git commit -m "Added new feature")
@@ -76,4 +86,8 @@ Thanks to the open-source community for tools & frameworks.
 
 📜 License
 
+<<<<<<< HEAD
 This project is licensed under the MIT License – feel free to use & modify.
+=======
+This project is licensed under the MIT License – feel free to use & modify.
+>>>>>>> 5819a14 (Updated README.md with project details)
