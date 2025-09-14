@@ -1,73 +1,79 @@
-# Welcome to your Lovable project
+🎨 Kolam Craft
 
-## Project info
+Kolam Craft is a digital platform that preserves and promotes the traditional South Indian art form Kolam.
+It allows users to learn, practice, and generate Kolam patterns with the help of modern technology.
 
-**URL**: https://lovable.dev/projects/29608ced-f640-4f54-b554-8de05c01785d
+📌 Problem Statement
 
-## How can I edit this code?
+Fading heritage: Kolam is losing cultural relevance.
 
-There are several ways of editing your application.
+No digital archive for easy learning and preservation.
 
-**Use Lovable**
+Manual process of drawing is time-consuming.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/29608ced-f640-4f54-b554-8de05c01785d) and start prompting.
+Young generation not adopting the art.
 
-Changes made via Lovable will be committed automatically to this repo.
+Kolam Craft aims to digitize, simplify, and modernize Kolam while keeping its cultural essence intact.
 
-**Use your preferred IDE**
+✨ Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🖼️ Kolam Pattern Library – Explore traditional & modern designs.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+🎮 Interactive Drawing Tool – Create Kolams digitally.
 
-Follow these steps:
+🤖 AI-Powered Suggestions – Generate new designs with ML/AI.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🌐 Multi-language Support – Easy access for learners worldwide.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+📱 Responsive UI – Works across devices (desktop & mobile).
 
-# Step 3: Install the necessary dependencies.
-npm i
+🛠️ Tech Stack
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Frontend: HTML, CSS, JavaScript (extendable with React/Next.js)
 
-**Edit a file directly in GitHub**
+Backend: Flask / Django (if applicable)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Database: SQLite / PostgreSQL
 
-**Use GitHub Codespaces**
+AI/ML (optional): Pattern generation using Python + ML models
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Hosting: GitHub Pages / Vercel / Render
 
-## What technologies are used for this project?
+🚀 Getting Started
+1. Clone the repo
+git clone https://github.com/omahuja22/kolam-craft.git
+cd kolam-craft
 
-This project is built with:
+2. Install dependencies (if backend is included)
+pip install -r requirements.txt
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. Run the app
+python app.py
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/29608ced-f640-4f54-b554-8de05c01785d) and click on Share -> Publish.
+Then open http://localhost:5000
+ in your browser.
 
-## Can I connect a custom domain to my Lovable project?
+🤝 Contributing
 
-Yes, you can!
+Contributions are welcome!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Fork this repo
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Create a feature branch (git checkout -b feature-name)
+
+Commit changes (git commit -m "Added new feature")
+
+Push (git push origin feature-name)
+
+Open a Pull Request
+
+🏆 Acknowledgments
+
+Inspiration from traditional South Indian Kolam art.
+
+Thanks to the open-source community for tools & frameworks.
+
+📜 License
+
+This project is licensed under the MIT License – feel free to use & modify.
