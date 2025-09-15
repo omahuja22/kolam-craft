@@ -75,11 +75,11 @@ export const HomePage = ({ onPageChange }: HomePageProps) => {
   ];
 
   return (
-    <div ref={containerRef} className="min-h-screen">
+    <div ref={containerRef} className="min-h-screen font-serif">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
         <motion.div 
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-30 dark:opacity-40"
           style={{ y, opacity }}
         >
           <img 
@@ -88,13 +88,17 @@ export const HomePage = ({ onPageChange }: HomePageProps) => {
             className="w-full h-full object-cover"
           />
         </motion.div>
-        <div className="relative container mx-auto px-4 py-20">
+        <div className="relative container mx-auto px-4 py-24">
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             className="max-w-4xl mx-auto text-center"
           >
+            <div className="inline-block mb-8">
+              <div className="w-24 h-1 bg-gradient-to-r from-accent to-secondary mx-auto mb-4 rounded-full" />
+              <h2 className="text-xl text-primary-foreground/90 tracking-wide uppercase">Welcome to</h2>
+            </div>
             <motion.h1 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -129,8 +133,7 @@ export const HomePage = ({ onPageChange }: HomePageProps) => {
                 <Button 
                   onClick={() => onPageChange("upload")}
                   size="lg"
-                  variant="secondary"
-                  className="text-lg px-8 py-6 shadow-kolam hover:shadow-lg transition-all group"
+                  className="text-lg px-8 py-6 rounded-full bg-gradient-to-r from-secondary to-accent hover:from-accent hover:to-secondary text-secondary-foreground shadow-kolam hover:shadow-xl transition-all duration-300 group"
                 >
                   <Upload className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                   Analyze Kolam
@@ -140,8 +143,7 @@ export const HomePage = ({ onPageChange }: HomePageProps) => {
                 <Button 
                   onClick={() => onPageChange("generate")}
                   size="lg"
-                  variant="secondary"
-                  className="text-lg px-8 py-6 shadow-kolam hover:shadow-lg transition-all group"
+                  className="text-lg px-8 py-6 rounded-full bg-primary/10 hover:bg-primary/20 border-2 border-primary-foreground/20 text-primary-foreground shadow-kolam hover:shadow-xl transition-all duration-300 group"
                 >
                   <Zap className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                   Generate Pattern

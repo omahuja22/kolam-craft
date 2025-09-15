@@ -1,13 +1,24 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 import { Badge } from "@/components/ui/badge";
-import { Loader2, Download, RefreshCw, Zap, Sparkles } from "lucide-react";
+import { Loader2, Download, RefreshCw, Zap, Sparkles, Info } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+
+interface PatternMetadata {
+  pattern_type: string;
+  grid_size: string;
+  total_dots: number;
+  complexity_level: number;
+  estimated_time: string;
+  difficulty: string;
+  traditional_name: string;
+  color_palette: string[];
+}
 
 export const GeneratePage = () => {
   const [gridSize, setGridSize] = useState([5]);
@@ -15,7 +26,7 @@ export const GeneratePage = () => {
   const [complexity, setComplexity] = useState([3]);
   const [isGenerating, setIsGenerating] = useState(false);
   const [generatedPattern, setGeneratedPattern] = useState<string | null>(null);
-  const [patternMetadata, setPatternMetadata] = useState<any>(null);
+  const [patternMetadata, setPatternMetadata] = useState<PatternMetadata | null>(null);
   const { toast } = useToast();
 
   const patternTypes = [

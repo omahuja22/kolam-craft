@@ -23,14 +23,25 @@ export const ThemeToggle = () => {
     <Button
       variant="ghost"
       size="icon"
-      className="w-9 h-9 hover:bg-accent/20 transition-colors"
+      className="w-10 h-10 rounded-full border-2 border-border hover:border-secondary hover:bg-secondary/10 transition-all duration-300"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
-      {theme === "dark" ? (
-        <Sun className="h-4 w-4 text-accent transition-all rotate-0 scale-100" />
-      ) : (
-        <Moon className="h-4 w-4 text-accent transition-all rotate-90 scale-100" />
-      )}
+      <div className="relative w-5 h-5">
+        <Sun
+          className={`absolute inset-0 h-5 w-5 text-secondary transition-all duration-500 ${
+            theme === "dark"
+              ? "rotate-0 scale-100 opacity-100"
+              : "rotate-90 scale-0 opacity-0"
+          }`}
+        />
+        <Moon
+          className={`absolute inset-0 h-5 w-5 text-secondary transition-all duration-500 ${
+            theme === "dark"
+              ? "rotate-90 scale-0 opacity-0"
+              : "rotate-0 scale-100 opacity-100"
+          }`}
+        />
+      </div>
       <span className="sr-only">Toggle theme</span>
     </Button>
   );
