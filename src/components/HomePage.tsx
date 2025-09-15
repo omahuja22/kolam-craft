@@ -71,7 +71,7 @@ export const HomePage = ({ onPageChange }: HomePageProps) => {
     { number: "500+", label: "Training Images" },
     { number: "95%", label: "Accuracy Rate" },
     { number: "10+", label: "Pattern Types" },
-    { number: "3", label: "Team Members" }
+    { number: "6", label: "Team Members" }
   ];
 
   return (
@@ -143,7 +143,7 @@ export const HomePage = ({ onPageChange }: HomePageProps) => {
                 <Button 
                   onClick={() => onPageChange("generate")}
                   size="lg"
-                  className="text-lg px-8 py-6 rounded-full bg-primary/10 hover:bg-primary/20 border-2 border-primary-foreground/20 text-primary-foreground shadow-kolam hover:shadow-xl transition-all duration-300 group"
+                  className="text-lg px-8 py-6 rounded-full bg-gradient-to-r from-secondary to-accent hover:from-accent hover:to-secondary text-secondary-foreground shadow-kolam hover:shadow-xl transition-all duration-300 group"
                 >
                   <Zap className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                   Generate Pattern
